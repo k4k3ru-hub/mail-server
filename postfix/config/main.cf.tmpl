@@ -1,0 +1,50 @@
+# COMPATIBILITY
+# The level below is what should be used with new (not upgrade) installs.
+compatibility_level = 3.9
+
+# Basic
+myhostname = ${MYHOSTNAME}
+mydomain = ${MYDOMAIN}
+myorigin = ${MYORIGIN}
+mydestination = ${MYDESTINATION}
+inet_interfaces = ${INET_INTERFACES}
+inet_protocols = ${INET_PROTOCOLS}
+proxy_interfaces = ${PROXY_INTERFACES}
+mynetworks_style = ${MYNETWORKS_STYLE}
+mynetworks = ${MYNETWORKS}
+relay_domains = ${RELAY_DOMAINS}
+relay_recipient_maps = ${RELAY_RECIPIENT_MAPS}
+relayhost = ${RELAYHOST}
+mail_owner = ${MAIL_OWNER}
+alias_maps = ${ALIAS_MAPS}
+local_transport = ${LOCAL_TRANSPORT}
+local_recipient_maps = ${LOCAL_RECIPIENT_MAPS}
+
+# Logging
+maillog_file = ${MAILLOG_FILE}
+
+# SASL
+smtpd_sasl_auth_enable = ${SMTPD_SASL_AUTH_ENABLE}
+smtpd_sasl_type = ${SMTPD_SASL_TYPE}
+smtpd_sasl_path = ${SMTPD_SASL_PATH}
+smtpd_sasl_security_options = ${SMTPD_SASL_SECURITY_OPTIONS}
+
+# SMTPD
+smtpd_recipient_restrictions = ${SMTPD_RECIPIENT_RESTRICTIONS}
+smtpd_relay_restrictions = ${SMTPD_RELAY_RESTRICTIONS}
+
+# TLS for Server
+smtpd_tls_auth_only = ${SMTPD_TLS_AUTH_ONLY}
+smtpd_tls_security_level = ${SMTPD_TLS_SECURITY_LEVEL}
+smtpd_tls_chain_files = ${SMTPD_TLS_CHAIN_FILES}
+smtpd_tls_cert_file = ${SMTPD_TLS_CERT_FILE}
+smtpd_tls_key_file = ${SMTPD_TLS_KEY_FILE}
+
+# TLS for Client
+smtp_tls_security_level = ${SMTP_TLS_SECURITY_LEVEL}
+smtp_tls_cert_file = ${SMTP_TLS_CERT_FILE}
+smtp_tls_key_file = ${SMTP_TLS_KEY_FILE}
+
+
+# Other
+soft_bounce = ${SOFT_BOUNCE}
